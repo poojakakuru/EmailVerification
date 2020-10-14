@@ -4,9 +4,9 @@ echo "Welcome to email verification program"
 
 read -p "Enter the Email-id:" email
 
-#verifying starting part
+#verifying @
 
-emailPat="^[A-Za-z0-9]+"
+emailPat="^([A-Za-z0-9]+)?@[a-zA-Z]+"
 
 if [[ $email =~ $emailPat ]]
 then
